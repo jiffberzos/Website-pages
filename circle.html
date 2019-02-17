@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	{% load static %}
+	<title>Circles</title>
+	<link rel="shortcut icon" href="{% static "testproject/favicon.ico" %}" type="image/x-icon" />
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.3/p5.js"></script>
+	<script type="text/javascript">
+        var fontfile = "{% static 'testproject/fontfile.ttf' %}";
+    </script>
+    <script src="{% static "testproject/circle.js" %}"></script>
+    <style type="text/css">
+    	html, body { 
+    		padding: 0; margin: 0; 
+    	}
+		canvas {
+		  display: block;
+		}
+	</style>
+</head>
+<body>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>WELCOME MORTAL</title>
+	{% load static %}
+	<link rel="stylesheet" type="text/css" href="{% static 'testproject/entrance.css' %}">
+	<style type="text/css">
+		#righteye {
+			position   : relative;
+			opacity    : 0;
+			left       : 50%;
+			margin-left: 67px;
+			top        : -320px;
+			height     : 15px;
+			width      : 15px;
+			background   : linear-gradient(to bottom right, #ad1f1f 0%, #350101 84%);
+			border-radius: 50%;
+			transition    : opacity 2s;
+		}
+		#left_text{
+			position  : absolute;
+			left      : 35%;
+			top       : 45%;
+			color     : white;
+			opacity   : 0;
+			transition: opacity 2s;
+		}
+	</style>
+</head>
+<body>
+	<p class= "fade">hello</p>
+	<p class="fade delayed">jiff berbos here</p>
+	<p class="fade delayed_a_bit_more">look into my eye</p>
+	<img src="{% static "testproject/jiff2.jpg" %}">
+
+	<a href="{% url 'dvd' %}">
+   		<div id = "righteye"></div>
+    </a>
+    <div id = "lefteye"></div>
+
+	<p id= "left_text">not that one</p>
+    <p id= "right_text">go on, click it</p>
+	
+</body>
+</html>
